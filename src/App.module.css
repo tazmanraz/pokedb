@@ -1,0 +1,65 @@
+@font-face {
+  font-family: pokefont;
+  src: url('./font/poke_solid.ttf');
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.full-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  background-color: #21209C;
+  font-family: pokefont;
+  font-size:30px;
+  color: #FDB827;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+
+.title input {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.title button {
+  width: 200px;
+  height: 60px;
+  margin: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 10px;
+  background-color: #F1F1F1;
+}
+
+.title button:hover {
+  cursor: pointer;
+}
+
+
+.display-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-stats h3 {
+  margin: 5px;
+}
+
+.display-stats img {
+  width: 200px;
+}

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Axios from 'axios';
 import Header from './Components/Header';
 import PokeInfo from './Components/PokeInfo';
+import PokeGraphs from './Components/PokeGraphs';
 
 
 function App() {
@@ -37,12 +38,23 @@ function App() {
         found={found} 
         name={name}
         pokeImage={pokemon.img}
-        type={pokemon.hp}
+        type={pokemon.type}
+        hp={pokemon.hp}
         attack={pokemon.attack}
-        defense={pokemon.attack}
+        defense={pokemon.defense}
         specialAtt={pokemon.specialAtt}
         specialDef={pokemon.specialDef}
         speed={pokemon.speed}
+        
+      />
+      <PokeGraphs
+        hp={pokemon.hp}
+        attack={pokemon.attack}
+        defense={pokemon.defense}
+        specialAtt={pokemon.specialAtt}
+        specialDef={pokemon.specialDef}
+        speed={pokemon.speed}
+        pokemon={pokemon}
       />
     </div>
   );
